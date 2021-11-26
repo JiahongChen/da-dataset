@@ -83,10 +83,17 @@ wget --save-cookies cookies.txt \
 
 # Download data with the saved log in information
 wget --load-cookies cookies.txt \
+     --output-document=leftImg8bit_trainvaltest.zip \
      https://www.cityscapes-dataset.com/file-handling/?packageID=3
+
+# Download label with the saved log in information
+wget --load-cookies cookies.txt \
+     --output-document=gtFine_trainvaltest.zip \
+     https://www.cityscapes-dataset.com/file-handling/?packageID=1
      
 # unzip compress file
 unzip leftImg8bit_trainvaltest.zip
+unzip gtFine_trainvaltest.zip
 ```
 
 # Classification dataset
