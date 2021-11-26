@@ -11,6 +11,8 @@ Command line scripts for downloading domain adaptation datasets (both classifica
   * Office-Home
 
 # Segmentation dataset
+You may use the [bash script](https://github.com/JiahongChen/da-dataset/blob/main/scripts/segmentation.sh) to download the data directly or follow the detailed explainations below.
+
 ## GTA
 GTA dataset contains 14966 synthetic images with pixel-wise annotation, it's resolution is 1914*1052. This dataset can be downloaded easily from [TU Darmstadt's server](https://download.visinf.tu-darmstadt.de/data/from_games/) as no registration is needed.
 ```
