@@ -24,7 +24,11 @@ do
 	wget --no-check-certificate https://download.visinf.tu-darmstadt.de/data/from_games/data/${idx}_images.zip
 	wget --no-check-certificate https://download.visinf.tu-darmstadt.de/data/from_games/data/${idx}_labels.zip
 done
-unzip *.zip
+for idx in 01 02 03 04 05 06 07 08 09 10
+do
+	unzip ${idx}_images.zip
+	unzip ${idx}_labels.zip
+done
 ```
 ## SYNTHIA
 SYNTHIA_RAND_CITYSCAPES dataset contains 9400 synthetic images with semantic annotation, it's resolution is 1280*760. This dataset can be downloaded from their [official website](https://synthia-dataset.net/downloads/) directly, but we would need to unrar the compressed file which required additional package in Unix systems.
