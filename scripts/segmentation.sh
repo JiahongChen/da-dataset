@@ -82,7 +82,15 @@ wget --save-cookies cookies.txt \
      https://www.cityscapes-dataset.com/login/
 password = ''
 
+# Download data with the saved log in information
 wget --load-cookies cookies.txt \
+     --output-document=leftImg8bit_trainvaltest.zip \
      https://www.cityscapes-dataset.com/file-handling/?packageID=3
+
+# Download label with the saved log in information
+wget --load-cookies cookies.txt \
+     --output-document=gtFine_trainvaltest.zip \
+     https://www.cityscapes-dataset.com/file-handling/?packageID=1
      
 unzip leftImg8bit_trainvaltest.zip
+unzip gtFine_trainvaltest.zip
