@@ -1,5 +1,5 @@
 # Domain adaptation dataset download with command line (GTA, SYNTHIA, Cityscaptes)
-Command line scripts for downloading domain adaptation datasets (both classification and segmentation), which could be used for model training on servers without GUI.
+Command line scripts to download domain adaptation dataset (both classification and segmentation), which could be used for model training on servers without GUI.
 * [Segmentation dataset](segmentation-dataset)
   * [GTA](#gta)
   * [SYNTHIA](#synthia)
