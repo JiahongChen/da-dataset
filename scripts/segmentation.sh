@@ -37,7 +37,7 @@ read -s -p "Your Cityscape password: " password
 # echo "$username"
 # echo "$password"
 
-GTA dataset
+########### GTA dataset ###########
 cd "$path"
 mkdir gta
 cd gta
@@ -52,7 +52,7 @@ do
 	unzip ${idx}_labels.zip
 done
 
-#SYNTHIA
+########### SYNTHIA ###########
 cd "$path"
 mkdir synthia
 cd synthia
@@ -70,7 +70,7 @@ do
   mv -v "$file" "$target"
 done
 
-#Cityscapes
+########### Cityscapes ###########
 cd "$path"
 mkdir cityscapes
 cd cityscapes
