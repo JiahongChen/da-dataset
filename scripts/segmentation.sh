@@ -77,7 +77,7 @@ cd cityscapes
 
 wget --save-cookies cookies.txt \
      --keep-session-cookies \
-     --post-data 'username=${username}&password=${password}' \
+     --post-data 'username='${username}'&password='${password}'&submit=Login' \
      --delete-after \
      https://www.cityscapes-dataset.com/login/
 password = ''
